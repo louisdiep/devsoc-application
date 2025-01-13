@@ -1,10 +1,9 @@
-Content:
+<!-- Content:
 
 welcome! i just got back from my dream around-the-world trip!
-click on some of the things i brought home :)
+help me unpack :)
 
 passport
-  about me
   name: louis
   degree: compsci
   age: 18
@@ -16,14 +15,14 @@ monet art book
   bold 'monet art book'
   origin: france
   description:
-  oil painting is one my hobbies and claude monet is my favourite artist. one of my dreams
+  oil painting is one of my hobbies and claude monet is my favourite artist. one of my dreams
   is to see his work in person!
 
   here are some of the paintings that i've done:
 
 
 stack of photos
-  i LOVE travelling and taking pictures along the way:
+  i love travelling and taking pictures along the way:
 
   - 1 photo new zealand and japan and thailand/hobart -
 
@@ -52,5 +51,68 @@ laptop
   that aside, i'm interested in frontend development and ui!
   so far, i've created a more professional personal website - louisdiep - 
   in html, css and javascript.
-  unfortunately that's all, but i'd love to do more ;)
+  unfortunately that's all, but i'd love to do more ;) -->
 
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="welcome! i just got back from my around-the-world trip! check out some of the things i brought home :)">
+    <title>Louis Diep</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>  
+  
+  <body>
+    <div class="container">
+      <p>
+        welcome! i just got back from my around-the-world trip! 
+        click on some of the things i brought home to learn more :)
+      </p>
+
+      <img class="souvenir-img" id="passport" src="assets/Pan_Blue_Circle.png" alt="passport">
+      <img class="souvenir-img" id="book" src="assets/Pan_Blue_Circle.png" alt="book">
+
+      <!-- Modal for Passport -->
+      <div id="passport-modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="text-box" id="passport-textbox">
+          
+        </div>
+      </div>
+
+      <!-- Modal for Book -->
+      <div id="book-modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="text-box" id="book-textbox">
+            <b>monet art book</b>
+            <p><u>origin:</u> france</p>
+            <p><u>description:</u>
+              oil painting is one of my hobbies and claude monet is my favourite artist. one of my dreams
+              is to see his work in person!
+            </p>
+            <p>
+              here are some of the paintings that i've done:
+            </p>
+          
+            
+          </p>
+        </div>
+      </div>
+
+      <!-- Modal for book -->
+      <!-- <div id="book-modal" class="modal">
+        <span class="close">&times;</span>
+        <div id="ticket-textbox" class="textbox"></div>
+      </div> -->
+  
+    </div>
+    
+    <div class="footer-padding"></div>
+  
+    <!-- Custom Scripts -->
+    <script src="js/index.js" defer></script>
+  </body>
+  </html>
