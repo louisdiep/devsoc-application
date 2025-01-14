@@ -1,5 +1,20 @@
 /* styles.css */
 
+section {
+  margin-top: 15rem;
+  min-height: 60vh;
+  width: 100%;
+}
+
+.right-align {
+  text-align: right;
+  display: block;
+}
+
+.small-space {
+  height: 5px;
+}
+
 img {
   padding: inherit;
   margin: auto;
@@ -12,8 +27,8 @@ img {
   width: 66.67%; 
   max-width: 66.67%;
   margin: auto;
-  padding: 10rem 5px 10rem 5px;
-  text-align: center;
+  padding: 0rem 5px 0rem 5px;
+  text-align: left;
   box-sizing: border-box; 
 }
 
@@ -22,12 +37,12 @@ img {
   flex-wrap: wrap;
   justify-content: left;
   gap: 2rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   align-items: normal;
 }
 
 .img-link-container img {
-  height: 2rem;
+  height: 3rem;
   width: auto;
   max-width: 100%;
   display: block;
@@ -47,10 +62,10 @@ img {
 }
 
 /* Font Settings */
-@import url("https://fonts.googleapis.com/css2?family=PT-Serif&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=PT-Serif&display=swap"); */
 /* All fonts */
 body {
-  font-family: "PT Serif", serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-optical-sizing: auto;
   font-style: normal;
   background-color: #f9f9f9;
@@ -144,118 +159,67 @@ a:active {
   height: 10rem;
 }
 
-/* Modal Images */
-
-.souvenir-img {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.souvenir-img:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.text-box {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-/* Add Animation */
-.text-box {  
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {transform: scale(0.1)} 
-  to {transform: scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .text-box {
-    width: 100%;
-  }
-}
-
 
 /* -------------------------------------------------------------------------- */
 
-/* Canvas */
-/* Canvas container */
-.text-box {
-  margin-top: 1rem;
-  position: relative;
-  display: block;
+.passport-container {
   width: 100%;
+  margin-top: 2rem;
+}
+
+.passport {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto;
   max-width: 100%;
   box-sizing: border-box;
   height: auto;
-  min-height: 200px;
-  text-align: left;
-  overflow: hidden;
-  background-image: url("../assets/canvas.webp");
+  min-height: 400px;
+  max-width: 700px;
+  overflow: auto;
+  background-image: url("../assets/passport.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
   padding: 1.618rem; 
-  /* External shadow */
   box-shadow: 
-  10px 10px 20px rgba(0, 0, 0, 0.6),   /* Dark shadow with larger blur */
-  5px 5px 10px rgba(0, 0, 0, 0.3);    /* Lighter shadow to create the depth */
-  /* Internal shadow for 3D effect */
+  2px 2px 2px rgba(0, 0, 0, 0.6),   
+  2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 1px 1px 20px 20px;
   box-shadow:
-  inset 2px 2px 8px rgba(0, 0, 0, 0.4),
-  inset -5px -5px 8px rgba(0, 0, 0, 0.6),
-  inset -5px -5px 8px rgba(0, 0, 0, 0.4),
-  inset -10px -10px 8px rgba(73, 71, 71, 0.147),
-  inset -6px -6px 8px rgba(37, 17, 216, 0.3), 
-  inset -1px -1px 8px rgba(0, 0, 154, 0.6); 
-  border-radius: 2px;
+  inset 2px rgba(0, 0, 0, 0.801),
+  inset -5px rgba(0, 0, 0, 0.8),
+  inset -5px rgba(0, 0, 0, 0.8),
+  inset -10px rgba(73, 71, 71, 0.8),
+  inset -6px rgba(37, 17, 216, 0.8), 
+  inset -1px rgba(0, 0, 154, 0.6); 
 }
 
-.text-box h5, 
-.text-box h6, 
-.text-box p, ul {
+
+.passport h5, 
+.passport h6, 
+.passport p, ul {
   color: #00033f;
+  font-family: 'Courier New', Courier, monospace;
 }
 
+.passport-photo {
+  flex: 0 0 200px;
+  margin-top: 20px;
+  height: auto;
+  max-width: 100%;
+}
 
+.passport-photo img {
+  width: 100%;
+  height: auto;
+}
 
+.passport-details {
+  flex: 1; 
+  text-align: left;
+}
 
