@@ -31,7 +31,7 @@ html {
 }
 
 #sky-wrapper {
-  --d: 360s; /* duration */
+  --d: calc(60 * 40s); /* duration */
   overflow: hidden;
   display: grid;
   grid-template-rows: repeat(1, 100vh); /* number of visible images + width */
@@ -44,6 +44,8 @@ html {
   grid-area: 1/1;
   display: flex;
   flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: flex-start;
   overflow: hidden;
   width: 200vw;
   position: relative;
@@ -51,7 +53,7 @@ html {
   margin: 0;
   object-fit: cover;
   animation: moveUp var(--d) linear infinite;
-  border: 1px solid red; 
+  /* border: 1px solid red;  */
 }
 
 #sky-wrapper .sky:nth-child(2) {
