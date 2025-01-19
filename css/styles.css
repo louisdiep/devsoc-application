@@ -4,7 +4,7 @@ body {
   font-family: Tahoma, Geneva, Verdana, sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  background-color: #8cbfd600;
+  /* background-color: #8cbfd600; */
   font-variation-settings:
   "width" 100;
   margin: 0;
@@ -12,7 +12,7 @@ body {
 }
 
 html {
-  background-color: #8cbfd6;
+  /* background-color: #8cbfd6; */
   max-width: 100%;
 }
 
@@ -39,6 +39,8 @@ html {
   position: absolute;
   z-index: -1000;
   opacity: 80%;
+  background-color: #8cbfd6;
+
   /* -webkit-mask-image: linear-gradient(to bottom, transparent, black 0%, black 98%, transparent);
   mask-image: linear-gradient(to bottom, transparent, black 0%, black 98%, transparent);
   -webkit-mask-repeat: no-repeat;
@@ -60,8 +62,9 @@ html {
   object-fit: cover;
   animation: moveUp var(--d) linear infinite;
   /* border: 1px solid red;  */
-  -webkit-mask-image: linear-gradient(to bottom, transparent, black 3%, black 97%, transparent);
-  mask-image: linear-gradient(to bottom, transparent, black 3%, black 97%, transparent);
+  background-color: #8cbfd6;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #8cbfd6 3%, #8cbfd6 97%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, #8cbfd6 3%, #8cbfd6 97%, transparent);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: 100% 100%;
