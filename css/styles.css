@@ -41,10 +41,11 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 
 #skiing {
-  width: 700px;
+  width: 800px;
   max-width: 100%;
   /* aspect-ratio: 1000 / 700; */
   aspect-ratio: 4032 / 3024;
@@ -77,6 +78,42 @@ img {
 #uniqlo .img-blur, #uniqlo .img {
   background-image: url('../assets/uniqlo.jpg')
 }
+
+#gallery {
+  width: 800px;
+  max-width: 100%;
+  /* aspect-ratio: 1000 / 700; */
+  aspect-ratio: 1023 / 731;
+}
+
+#gallery .img-blur, #gallery .img {
+  background-image: url('../assets/gallery.jpg')
+}
+
+#paintings {
+  width: 800px;
+  max-width: 100%;
+  aspect-ratio: 2009 / 480;
+}
+
+#paintings .img-blur, #paintings .img {
+  background-image: url('../assets/banner.png')
+}
+
+#typing {
+  width: 400px;
+  max-width: 100%;
+  aspect-ratio: 377 / 278;
+}
+
+#typing .img-blur {
+  background-image: url('../assets/typing.png')
+}
+
+#typing .img {
+  background-image: url('../assets/typing.gif')
+}
+
 
 
 .img-blur {
@@ -210,11 +247,6 @@ ul {
   padding-left: 1.618rem;
 }
 
-blue {
-  color: #c7c6ff;
-  font-weight: 600;
-}
-
 .italic {
   font-style: italic;
 }
@@ -271,17 +303,23 @@ a:active {
   background-position: center;
   background-repeat: no-repeat; 
   padding: 1.618rem; 
-  box-shadow: 
+  /* border-radius: 1px 1px 20px 20px; */
+  border-radius: 20px;
+
+  /* box-shadow: 
   2px 2px 2px rgba(0, 0, 0, 0.6),   
   2px 2px 4px rgba(0, 0, 0, 0.3);
-  border-radius: 1px 1px 20px 20px;
   box-shadow:
   inset 2px rgba(0, 0, 0, 0.801),
   inset -5px rgba(0, 0, 0, 0.8),
   inset -5px rgba(0, 0, 0, 0.8),
   inset -10px rgba(73, 71, 71, 0.8),
   inset -6px rgba(37, 17, 216, 0.8), 
-  inset -1px rgba(0, 0, 154, 0.6); 
+  inset -1px rgba(0, 0, 154, 0.6);  */
+  /* outer shadow */
+  box-shadow: 
+    0 0 20px rgba(252, 248, 235, 0.605), /* Main border shadow extending 20px */
+    0 0 40px rgba(255, 249, 232, 0.668); /* A soft additional glow */
 }
 
 
