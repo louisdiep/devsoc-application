@@ -1,64 +1,9 @@
-<!-- Content:
-
-welcome! i just got back from my dream around-the-world trip!
-help me unpack :)
-
-passport
-  name: louis
-  degree: compsci
-  age: 18
-  year: 2nd
-  links: git, linkedin
-
-hobbies
-monet art book
-  bold 'monet art book'
-  origin: france
-  description:
-  oil painting is one of my hobbies and claude monet is my favourite artist. one of my dreams
-  is to see his work in person!
-
-  here are some of the paintings that i've done:
-
-
-stack of photos
-  i love travelling and taking pictures along the way:
-
-  - 1 photo new zealand and japan and thailand/hobart -
-
-  korea and europe are next on my bucket list :)
-
-uniqlo jeans
-  i've got a bit of a problem with having too many clothes from uniqlo. their basics are just
-  too good!
-  these dark wash jeans are my fav piece.
-
-fun facts
-marscapone cheese - fav food: tiramisu - italy
-  a key ingredient in my favourite dessert - tiramisu!
-  aside from the traditional tiramisu, i love making matcha tiramisu as well.
-  highly recommend!
-  
-hojicha powder - current obsession: iced hojicha latte - japan
-  iced hojicha lattes are my current obsession. it's roasted green tea so it has
-  this really amazing aroma. hottake: it's better than matcha
-
-
-laptop
-  to grind leetcode on the trip!
-  jk jk as a cs student i'm taking every opportunity i can to touch grass so this wouldn't have brough this
-
-  that aside, i'm interested in frontend development and ui!
-  so far, i've created a more professional personal website - louisdiep - 
-  in html, css and javascript.
-  unfortunately that's all, but i'd love to do more ;) -->
-
   <!DOCTYPE html>
   <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="welcome! i just got back from my around-the-world trip! check out some of the things i brought home :)">
+    <meta name="description" content="hey! checkout my around-the-world trip">
     <title>Louis Diep</title>
     
     <link rel="stylesheet" href="css/styles.css">
@@ -66,6 +11,9 @@ laptop
   </head>  
   
   <body>
+    <div id="sky">
+      
+    </div>
     <div class="container">
       <section>
         <div class="section-container">
@@ -266,7 +214,7 @@ laptop
         <div class="section-container">
           <div class="text-container">
             <p>
-              looks like there's wifi on the flight, let's get on top of my projects!
+              looks like there's wifi on the flight, time to get on top of my projects!
             </p>
           </div>
           <div class="img-container" id="typing">
@@ -275,7 +223,7 @@ laptop
           </div>
           <div class="text-container">
             <p>
-              i'm interested in frontend development and ui and so far, i've created a personal website - louisdiep!
+              i'm interested in frontend development and ui and so far, i've been working on a more polished <a href="https://louisdiep.github.io/" target="_blank">personal website</a>!
             </p>
             <p>
               unfortunately that's all the project i've done for now, but i'd love to do more :D
@@ -289,99 +237,11 @@ laptop
           <div class="text-container">
             <p>
               that's all!
-              thanks for coming a long ٩(^ᗜ^ )و ´-
+              thanks for coming along ٩(^ᗜ^ )و ´-
             </p>
           </div>
         </div>
       </section>
-
-      <!-- Modal for Passport -->
-      <div id="passport-modal" class="modal">
-        <span class="close">&times;</span>
-        <div class="text-box" id="passport-textbox">
-          
-        </div>
-      </div>
-
-      <!-- Modal for Book -->
-      <div id="book-modal" class="modal">
-        <span class="close">&times;</span>
-        <div class="text-box" id="book-textbox">
-          <b>art book</b>
-          <p><u>origin: </u>giverny, france</p>
-          <p><u>description:</u>
-            painting is one of my hobbies so i had to pick up a book by my favourite artist - claude monet!
-          </p>
-          <p>
-            here are some of my own works :)
-          </p>
-        </div>
-      </div>
-
-      <!-- Modal for Book -->
-      <div id="camera-modal" class="modal">
-        <span class="close">&times;</span>
-        <div class="text-box" id="camera-textbox">
-          <b>camera</b>
-          <p><u>origin: </u>home</p>
-          <p><u>description: </u>
-            i had to bring my camera to take some photos
-
-            oh look, there're some leftover from past trips!
-            - 1 photo new zealand and japan and thailand/hobart -
-          
-          </p>
-        </div>
-      </div>
-
-      <div id="jeans-modal" class="modal">
-        <span class="close">&times;</span>
-        <div class="text-box" id="jeans-textbox">
-          <b>jeans</b>
-          <p><u>origin: </u>tokyo, japan</p>
-          <p><u>description: </u>
-            i've got a bit of a problem with having too many clothes from uniqlo.
-            so, i had to cop these dark wash jeans. their basics are just
-            too good!
-          </p>
-        </div>
-      </div>
-
-      <div id="cheese-modal" class="modal">
-        <span class="close">&times;</span>
-        <div class="text-box" id="cheese-textbox">
-          <b>marscapone cheese</b>
-          <p><u>origin: </u>parma, italy</p>
-          <p><u>description: </u>
-            a key ingredient in my favourite dessert - tiramisu! 
-            photo or tiramisu crossfading with matcha
-            yum
-          </p>
-        </div>
-      </div>
-
-      <div id="laptop-modal" class="modal">
-        <span class="close">&times;</span>
-        <div class="text-box" id="laptop-textbox">
-          <b>laptop</b>
-          <p><u>origin: </u>home</p>
-          <p><u>description: </u>
-            to grind leetcode on the trip!
-            jk jk as a cs student i take every oppportunity i can to touch grass so this wouldn't have brought this.
-          
-            that aside, i'm interested in frontend development and ui!
-            so far, i've created a personal website - louisdiep - 
-            in html, css and javascript.
-            unfortunately that's all the project i've done, but i'd love to do more :D
-          </p>
-        </div>
-      </div>
-
-      that's all
-      thanks for checking it out
-      <pre>
-        ٩(^ᗜ^ )و ´-
-      </pre>
   
     </div>
     

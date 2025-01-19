@@ -1,31 +1,36 @@
 // index.js
 
+document.addEventListener("DOMContentLoaded", () => {
+    const sky = document.getElementById("sky");
+    if (!sky) {
+        console.error("sky element not found!");
+        return; 
+    }
 
-// Modal Control
-// Get the modal
-// var images = document.querySelectorAll('.souvenir-img');
-// var modals = document.querySelectorAll('.modal');
+    function getRndInteger(min, max) {
+        return Math.floor(Math.random() * (max - min) ) + min;
+      }
 
-// var img = document.getElementById('passport');
-// var textBox = document.getElementById("passport-textbox");
+    function createClouds() {
+        const cloud = document.createElement("img");
+        // const randomSize = getRndInteger(600, 1000);
+        // cloud.style.width = randomSize + "px";
+        const randomSize = getRndInteger(600, 1000);
+        cloud.style.width = randomSize + "px";
 
-// images.forEach(function(img) {
-//     img.onclick = function() {
-//       var modalId = img.id + '-modal';
-//       var modal = document.getElementById(modalId);
-//       var textBox = modal.querySelector('.text-box');
-  
-//       modal.style.display = "block";
-//       textBox.style.display = "block";
-//     };
-//   });
+        const randomTransform = getRndInteger(-100, 100);
+        cloud.style.transform = `translateX(${randomTransform}px)`;
+        cloud.src = "../assets/cloud.png";
+        sky.append(cloud);
+        cloud.classList.add("cloud");
+    }
 
-//   var closeButtons = document.querySelectorAll('.close');
-//   closeButtons.forEach(function(span) {
-//     span.onclick = function() {
-//       var modal = span.closest('.modal'); 
-//       var textBox = modal.querySelector('.text-box');
-//       modal.style.display = "none";
-//       textBox.style.display = "none"; 
-//     };
-//   });
+
+
+    const numClouds = 50;
+    for (let i = 0; i < numClouds; i++) {
+        createClouds();
+    }
+    
+})
+
