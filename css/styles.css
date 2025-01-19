@@ -38,14 +38,20 @@ html {
   width: 100%;
   position: absolute;
   z-index: -1000;
+  opacity: 80%;
+  /* -webkit-mask-image: linear-gradient(to bottom, transparent, black 0%, black 98%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, black 0%, black 98%, transparent);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%; */
 }
 
 .sky {
   grid-area: 1/1;
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-evenly;
-  align-items: space-evenly;
+  align-items: flex-start;
   overflow: hidden;
   width: 200vw;
   position: relative;
@@ -54,6 +60,12 @@ html {
   object-fit: cover;
   animation: moveUp var(--d) linear infinite;
   /* border: 1px solid red;  */
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 3%, black 97%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, black 3%, black 97%, transparent);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
 }
 
 #sky-wrapper .sky:nth-child(2) {
@@ -211,7 +223,8 @@ img {
 }
 
 section {
-  background: radial-gradient(farthest-side, rgba(240, 255, 255, 0.70) 60%, rgba(240, 255, 255, 0) 100%);
+  /* background: radial-gradient(farthest-side, rgba(231, 242, 255, 0.70) 30%, rgba(240, 255, 255, 0) 100%); */
+  /* background: linear-gradient(farthest-side, rgba(231, 242, 255, 0.70) 30%, rgba(240, 255, 255, 0) 100%); */
   margin-top: 5rem;
   margin-bottom: 10rem;
   width: 100%;
@@ -262,7 +275,7 @@ section {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   color: #2f2f2f;
-  font-weight: 575;
+  font-weight: 350;
   line-height: 1.15;
   margin-bottom: 1.618rem;
   padding: 0;
@@ -270,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p, ul {
   color: #2f2f2f;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1rem;
   line-height: 1.618;
   margin-bottom: 0.1rem;
