@@ -19,8 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
         cloud.style.width = randomSize + "px";
         cloud.style.opacity = "50%";
 
-        const randomTransform = getRndInteger(-100, 0) + -50;
-        cloud.style.transform = `translateX(${randomTransform}px)`;
+        const randomTransformX = getRndInteger(-25, 0) + -50;
+        const randomTransformY = getRndInteger(-25, 25);
+
+        cloud.style.transform = `translateX(${randomTransformX}px) translateY(${randomTransformY}px)`;
         cloud.src = "assets/cloud.png";
         sky.append(cloud);
         cloud.classList.add("cloud");
