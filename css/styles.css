@@ -44,8 +44,8 @@ html {
   grid-area: 1/1;
   display: flex;
   flex-flow: column wrap;
-  justify-content: start;
-  align-items: start;
+  justify-content: space-evenly;
+  align-items: flex-start;
   overflow: hidden;
   width: 200vw;
   position: relative;

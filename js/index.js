@@ -15,12 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const cloud = document.createElement("img");
 
-        const randomSize = getRndInteger(600, 1000);
+        const randomSize = getRndInteger(600, 1200);
         cloud.style.width = randomSize + "px";
         cloud.style.opacity = "50%";
 
-        const randomTransformX = getRndInteger(-25, 0) + -50;
-        const randomTransformY = getRndInteger(-25, 25);
+        const randomTransformX = getRndInteger(-500, 500);
+        const randomTransformY = getRndInteger(-500, 500);
 
         cloud.style.transform = `translateX(${randomTransformX}px) translateY(${randomTransformY}px)`;
         cloud.src = "assets/cloud.png";
