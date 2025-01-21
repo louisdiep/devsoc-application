@@ -63,8 +63,8 @@ html {
   animation: moveUp var(--d) linear infinite;
   /* border: 1px solid red;  */
   background-color: #8cbfd6;
-  -webkit-mask-image: linear-gradient(to bottom, transparent, #8cbfd6 3%, #8cbfd6 97%, transparent);
-  mask-image: linear-gradient(to bottom, transparent, #8cbfd6 3%, #8cbfd6 97%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #8cbfd6 2%, #8cbfd6 98%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, #8cbfd6 2%, #8cbfd6 98%, transparent);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: 100% 100%;
@@ -176,7 +176,7 @@ img {
   background-image: url('../assets/gallery.jpg')
 }
 
-#paintings {
+/* #paintings {
   width: 800px;
   max-width: 100%;
   aspect-ratio: 2009 / 480;
@@ -184,7 +184,7 @@ img {
 
 #paintings .img-blur, #paintings .img {
   background-image: url('../assets/banner.png')
-}
+} */
 
 #typing {
   width: 400px;
@@ -198,6 +198,46 @@ img {
 
 #typing .img {
   background-image: url('../assets/typing.gif')
+}
+
+#paintings {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#people {
+  width: 450px;
+  max-width: 100%;
+  aspect-ratio: 661 / 480;
+}
+
+#people .img-blur, #people .img {
+  background-image: url('../assets/people.png')
+}
+
+#fish {
+  width: 450px;
+  max-width: 100%;
+  aspect-ratio: 660 / 480;
+}
+
+#fish .img-blur, #fish .img {
+  background-image: url('../assets/fish.png')
+}
+
+
+#umbrellas {
+  width: 450px;
+  max-width: 100%;
+  aspect-ratio: 660 / 480;
+}
+
+#umbrellas .img-blur, #umbrellas .img {
+  background-image: url('../assets/umbrellas.png')
 }
 
 
