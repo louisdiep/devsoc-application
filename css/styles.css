@@ -119,6 +119,16 @@ img {
   max-width: 100%;
 }
 
+video {
+  width: 500px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 
+    0 0 20px rgba(252, 248, 235, 0.605), /* Main border shadow extending 20px */
+    0 0 40px rgba(255, 249, 232, 0.668); /* A soft additional glow */
+  margin: 2rem auto;
+}
 
 
 .img-blur,
@@ -423,8 +433,8 @@ a:active {
   padding: 1.618rem; 
   border-radius: 20px;
   box-shadow: 
-    0 0 20px rgba(252, 248, 235, 0.605), /* Main border shadow extending 20px */
-    0 0 40px rgba(255, 249, 232, 0.668); /* A soft additional glow */
+    0 0 20px rgba(252, 248, 235, 0.605), /* main border shadow extending 20px */
+    0 0 40px rgba(255, 249, 232, 0.668); /* soft additional glow */
 }
 
 
