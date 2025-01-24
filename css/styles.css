@@ -31,7 +31,7 @@ html {
 }
 
 #sky-wrapper {
-  --d: calc(60 * 80s); /* duration */
+  --d: calc(60 * 60s); /* duration */
   overflow: hidden;
   display: grid;
   grid-template-rows: repeat(1, 100vh); /* number of visible images + width */
@@ -340,6 +340,10 @@ p, ul {
   font-size: 1rem;
   line-height: 1.618;
   margin-bottom: 0.1rem;
+}
+
+b {
+  font-weight: 600;
 }
 
 h6 {
