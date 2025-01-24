@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const skies = document.querySelectorAll(".sky");
     const skyWrapper = document.getElementById("sky-wrapper");
     const pageHeight = document.body.scrollHeight;
-    skyWrapper.style.height = `${pageHeight + 20}px`;
+    skyWrapper.style.height = `${pageHeight + 300}px`;
 
     function getRndInteger(min, max) {
         return Math.floor(Math.random() * (max - min) ) + min;
